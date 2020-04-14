@@ -6,7 +6,7 @@
   <groupId>crosby.binary</groupId>
   <artifactId>osmpbf</artifactId>
   <packaging>jar</packaging>
-  <version>2.0.0</version>
+  <version>2.0.0-RC1</version>
   <name>OSM-Binary</name>
   <description>Library for the OpenStreetMap PBF format</description>
   <url>https://github.com/scrosby/OSM-binary</url>
@@ -41,7 +41,7 @@
       <plugin>
         <groupId>com.github.os72</groupId>
         <artifactId>protoc-jar-maven-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.8.0</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
@@ -61,12 +61,12 @@
 
   <distributionManagement>
     <snapshotRepository>
-      <id>wv-nexus-snapshots</id>
-      <url>http://nexus.webvalto.hu:8080/nexus/content/repositories/snapshots</url>
+      <id>realcity-snapshots</id>
+      <url>http://artifacts.realcity.io/repository/snapshots/</url>
     </snapshotRepository>
     <repository>
-      <id>wv-nexus-releases</id>
-      <url>http://nexus.webvalto.hu:8080/nexus/content/repositories/releases</url>
+      <id>realcity-releases</id>
+      <url>http://artifacts.realcity.io/repository/releases/</url>
     </repository>
   </distributionManagement>
 
@@ -88,7 +88,7 @@
     <dependency>
       <groupId>com.google.protobuf</groupId>
       <artifactId>protobuf-java</artifactId>
-      <version>3.2.0</version>
+      <version>3.8.0</version>
     </dependency>
   </dependencies>
 </project>
